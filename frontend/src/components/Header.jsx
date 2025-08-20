@@ -71,6 +71,7 @@ const Header = () => {
               <button
                 className="flex items-center text-white hover:text-purple-400 transition-colors"
                 onClick={() => setOpenDropdown(openDropdown === 'tools' ? null : 'tools')}
+                onMouseEnter={() => setOpenDropdown('tools')}
               >
                 Tools <ChevronDown className="ml-1 h-4 w-4" />
               </button>
