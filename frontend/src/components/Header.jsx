@@ -76,7 +76,8 @@ const Header = () => {
                 Tools <ChevronDown className="ml-1 h-4 w-4" />
               </button>
               {openDropdown === 'tools' && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-slate-800 rounded-lg shadow-xl border border-slate-700 py-2">
+                <div className="absolute top-full left-0 mt-2 w-64 bg-slate-800 rounded-lg shadow-xl border border-slate-700 py-2"
+                     onMouseLeave={() => setOpenDropdown(null)}>
                   {toolsMenuItems.map((item, index) => (
                     <a
                       key={index}
